@@ -1,7 +1,8 @@
 import React from "react";
-import FilterableProductTable from "./src/components/FilterableProductTable/FilterableProductTable";
+//import FilterableProductTable from "./src/components/FilterableProductTable/FilterableProductTable";
+import Product from './src/models/Product'
 
-const PRODUCTS = [
+const Products: Array<Product> = [
     {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
     {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
     {category: "Fruits", price: "$2", stocked: false, name: "Passionfruit"},
@@ -11,5 +12,6 @@ const PRODUCTS = [
   ];
 
 export default function App() {
-    return <FilterableProductTable products={PRODUCTS} />;
+    // return <FilterableProductTable products={Products} />;
+    return <div>Hello world</div>
 }
